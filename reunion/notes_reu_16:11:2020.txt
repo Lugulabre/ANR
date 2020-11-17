@@ -1,0 +1,58 @@
+
+reproduction animale du ckd
+
+demeure question corrélation vs causalité
+
+travail de modélisation pour vérifier si hypothèse montre bien la causalité
+
+grand nombre échantillon souris
+contrôle diversité génétique
+autres facteurs négligés chez l'humain
+pas exhaustif chez humain
+chez souris plus de contrôle
+
+méthodes bioinfo
+question fondamentale sur math/stat : permet trancher ?
+
+gros travail sur l'échantillonnage et l'exploration du modèle animal
+s'appuyer sur la biblio
+corrélation entre microbiote et d'autres pathologies chroniques
+pour montrer que modèle souris est faisable
+
+différence entre les ckd et ckdu ?
+combien d'individus (avec/sans) 
+repartir du même échantillon
+
+par rapport à des gens sains et par rapport à des gens sains avec la même eau
+
+aller plus loin sur densité bactérienne, densité cyanotoxines...
+
+bien mettre l'accent sur la partie bioinfo
+
+voir comment évolue le microbiome quand on introduit massivement des types de polluants
+
+1ère question
+- spécificité du microbiome vs ckd (témoin négatif !)
+	-> auteur ont montré modif micro chez patients ckd
+	-> spécifique chez patients ckd ?
+	-> patients ou modèle animal ?
+	-> mécanisme de régulation en aval (transcriptomique / protéomique)
+
+
+
+https://doi.org/10.3389/fgene.2019.00453
+papier résumant la maladie
+
+https://doi.org/10.1016/j.kint.2019.09.017
+
+Kidney disease models: tools to identify mechanisms and potential therapeutic targets
+
+https://doi.org/10.1002/path.5346
+
+https://doi.org/10.1371/journal.pone.0082506
+
+https://doi.org/10.1093/jnci/djm288
+
+Models of chronic kidney disease Hai-Chun Yang, Yiqin Zuo, and Agnes B. Fogo
+
+https://doi.org/10.3389/fgene.2019.00453
