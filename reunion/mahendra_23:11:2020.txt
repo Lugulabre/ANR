@@ -1,0 +1,171 @@
+Questions pour avoir une direction
+
+- Comment s'organise un projet ANR ?
+
+- Durée d'un projet ANR
+
+- Infos sur récolte des données
+
+- Traitement des données (pre-processing)
+
+- Analyse des données
+
+- Nécessité de prévoir résultats ?
+
+- Recherches personnelles
+
+- Métagénomique + transcriptomique + statistique
+
+- Rôles nécessaires
+
+
+MaIAGE
+
+beaucoup d'applications métagénomiques
+10 ans labo
+Thématiques stat méta 7-8 ans
+
+Lettre d'intention
+Décrit grande ligne ce qu'on doit faire
+
+Proposition finale 20-30 pages
+
+Organisation analyse
+Séparer partie bioinfo et biostat
+Récolte des données (patients, patients malades)
+Microbiote patients sains vs malades
+age, sexe, IMC lié à microbiote
+Régime alimentaire, niveau socio-professionnel
+Pas oublié de faire dans récolte données
+
+Si sur humain, consentement, éthique
+Faire signer papier (comité etc)
+Bar coding -> 16S
+
+Transcriptome -> attention
+Compliqué à mettre en œuvre
+Quand on récupère arn communauté microbienne
+Pas mal contaminé par arn hôte
+ARN durée 1/2 vie courte, dégradation courte
+Attention à différence par rapport à prélèvement
+Métatranscriptomique -> expression de gènes -> abondance bactérie et expression
+Quantification abondance bactérie
+Abondance bactérie en terme de copie de gènes
+À partir données 16S, associer bactéries, niveau total
+Pas meilleure approche, données 16S un peu biaisées
+Méta-T intéressant mais difficile à analyser
+
+x patients sains et x patients pairés
+Techno séquençage -> Illumina 2x250, catalogue réf sur microbiote et gènes marqueurs fonctionnent bien (MinION, long read)
+10aines de milliers de reads par échnatillon, 30 à 50 000
+Multiplexé pour éviter effet batch (! à détailler)
+Un seul run de séquençage, à penser, à vérifier
+Profondeur x nombre échantillon
+
+Méta-T, 10 de millions de read par échantillon
+Beaucoup plus grande profondeur (vérifier catalogue technique Illumina)
+
+Filtre qualité séquence
+450 et 550 pdb selon la longueur de la région
+Clustering (ASV Amplicon Seqeunce Variant, OTU)
+ASV -> tout vient du même individu, est ce que une seule séquence génératrice ?
+On sépare ce qui est différent
+Produit pseudo espèce bactérienne
+Attention à nettoyer chimère
+Une partie 16S veint bactérie et une autre d'une autre bactérie
+Filtrer données sur prévalence et abondance
+Présent dans un ou deux échantillons
+Table de comptage finale sur laquelle on peut travailler
+
+Analyse de alpha et beta diversité, calculer distance jacquard, b-curtis
+ACP pour microbiote
+
+Test ANOVA multi-varié par permutation
+permanova
+généralisation dans le cas multivarié
+Communauté malade ≠ sain
+
+Anlayse abondance différentielle
+
+
+Analyse transcirptomique
+Mapping read contre catalogue de référence
+Construit par groupe sur jeu de données massifs
+Catalogue de réf :
+IGCC (pointeur dans littérature)
+UHGG
+On se retrouve de nouveau avec tableau de comptage : gènes par échantillon
+Un peu les mêmes analyses (pré filtre)
+Quelques centaines, milliers d'espèces, quelques millions de gènes total
+Classer en fonction KO ou voie métabolique
+Module fonctionnel
+
+Ensuite partie bio, interprétation des résultats
+
+
+Anticipation résultats
+On ne sait pas ce qu'on aura
+Plan de contingence -> évaluer risques et mesures pour y remédier
+Si on n'arrive pas à prouver l'hypothèse de départ, qu'est ce qui se passe, que fait-on ?
+
+
+Prend plus de temps cpu pour le pre processing
+Une fois que le pipeline est calé, pas de soucis
+Analyse de données par forcément gourmand au niveau calcul, mais bien réfléchir à question
+Plein de pipelines existant
+Qiime, modor, dada2
+
+galaxy -> portail outil bioinfo
+On peut passer par qiime pour plein d'outils galaxy
+
+1 bioinfo dédié + 1 statisticien à temps partiel
+Prévoir 1 douzaine de mois pour chaque personne
+
+Parfois méthode nécessitent d'aggreger données au fur et à mesure
+D'autres besoins que tout dispo
+
+Labo passent par prestataires
+Relations avec biologistes
+Récolte echantillon
+Envoyer à plateforme de séquençage (privée ou académique)
+
+
+Recherches personnelles
+Analyste 'tout-terrain'
+Beaucoup de projets bar coding
+Thématique inra (alimentation, nutrition humaine)
+impact maladie
+supplémentation prébiotique
+réduire impact allergies nouveaux nés
+Microbiote acteur de médiation, associé phénotype, est-ce que microbiote modif ?
+
+Dvlpmt méthode stat, grande dimension, reconstruction réseau d'interaction
+Construire classificateur d'ech à partir microbiote
+Idv en train developper maladie difficile à detecter
+Patho associée au foie
+Test diagno
+Bioinfo-stat -> biomarqueur pour prédire maladie ou suscebtilite
++ Enseignement à université de paris
+Souvent question bio
+Petite formation en stat importante
+Positionnement bioinfo-biostat
+
+
+
+Coût de séquençage non négligeable (20aines d'euro par échantillon)
+Meta-T assez chère
+Partie stockage et matériel, qlq milliers d'euro
+Très cher -> personnel recruté pour l'ANR
+70 000 € par an
+Si déjà employé par l'institut, pas sur l'anr, c'est institut qui prend en compte
+
+Materiel informatique
+
+Cout publication
+Taxe de la part de editeurs pour publier en open access
+Taxe sur les chercheurs pour que articles soient publiés
+(2500€ par article)
+
+
+
+Etat de l'art très important dans projet
