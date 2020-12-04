@@ -1,0 +1,145 @@
+microbiote
+métagénomique + transcriptomique
+méta-T très difficile
+
+
+analyse multi omiques par deep learning pour déterminer biomarqueurs de vieillesse
+études faites épigénétique
+méthylation de l'adn
+métabolomique
+métagénomique
+
+impact ingestion fromage microbiote sujet immunodéprimé
+souris
+étude homme en parallèle
+métagénomique
+transcriptomique
+métabolomique
+interaction bactéries/champignons
+
+
+Partie récolte et traitement échantillons :
+Temps et coût pour transcripto, métagén, métabo
+
+Analyse des résultats
+-> cohérence et pertinence ?
+
+Utilisation outils pour nos question (multiOmics & timeOmics)
+
+Problèmes potentiels auxquels se préparer ?
+
+
+Classification entre différents âges
+Beaucoup de données en fonction club âge
+données transcriptomes
+épigénétique ?
+Biomarqueurs connus vieillissement
+Processus old tout intégré donc prote transcripto
+epigenetique identifier certaines modif
++ de phospho, methyl
+attention de la normalisation des données (différence entre les équipes au lieu de différence entre les âges)
+entreprises s'occupant juste de la récolte de donneés cliniques
+survol données publiques, données 
+
+sujet immunodéprimé
+risque fongique chez patients avec certains aliments (poivre, fromage)
+sujets sains
+période éviction réinsertion
+système cross-over en témoin
+2ème partie souris
+
+Modèle souris
+Si souris dans les mêmes cages, microbiotes se ressemblent beaucoup plus car les sels sont mangés
++ stress sacrifice (petites molécules et transcriptome)
+
+Shotgun pas de taxonomie pseudo fonctionnel
+Purement in silico, pas aussi précis que shotgun
+Coût à l'impact
+16S parfois trop similaire entre 2 espèces
+Séquençage métagen non négligeable mais plus aussi important qu'avant
+Ressources calculs plus importants chez shotgun que 16S
+Bien expliquer pourquoi on utilise une méthode au lieu de l'autre
+Si shotgun on voit gènes présents
+Le mieux est d'avoir les trois
+
+16S shotgun -> si trop d'adn humain envahit la PCR
+Dans les 16S protocoles pour extraire l'ADN bactérien
+1ère technique pour lyser cell humaines et ensuite cell bacteriennes
+
+Si protocoles pour faire meta-T
+plateforme de sequençage à contacter pour connaître les protocoles
+Déterminants pour coût -> profondeur et nombre échantillon
+Si on remplit lignes au complet, prix avantageux
+Kit d'illumina très cher (10-15 000$)
+Si quand on passe sur la machine les lignes sont pas remplies
+
+Profondeur nécessaire pour transcriptomique principalement (mutation rare etc...)
+
+Shotgun -> clusteriser les échantillons
+assez de matériel pour 2 lignes de séquençage
+effet de batch
+Si on fait des runs différentes, certain impact, diminuer biais expérimentales au maximum
+
+1 individu de chaque groupe sur plusieurs jours
+Si tous les échantillons sont sacrifiés en même temps, biais
+Se concentrer su différence biologique
+
+timeOmics
+Avoir un minimum de time points
+Regarde les profils et clusterise les profils similaires
+4 ou 5 time points
+Si trous/données manquantes attention
+Modèle estimant valeurs NA
+Source de biais si peu de time points
+
+Idée de dvlp timeO
+en fonction des différents time points, analyse
+
+Si 2 gènes diffénces expressions mais même évolution dans le temps conclusions différentes
+
+Courbe n'évoluant pas dans le temps filtrée, algorithme de clustering, nb cluster optimales, décalage courbe et profil (ex décalage profil prot et arn)
+
+remet patients en décalage sur la majorité, normalise la vitesse de réaction des patients
+
+Cloud permet estimer temps de calcul, payer à l'utilisation
+Contexte universitaire accès certaines infrastructures
+Dans demandes de subvention -> volet pour la gestion des données, pérennité des données, anonymat, données humaines, patients...
+stockage à long terme des données
+acheter espace de stockage à long terme
+
+Si échantillons anonymisés, possibilité d'utiliser les stockages grandes entreprises
+
+Tout ce qui est données humaines, québec pas le droit d'analyser sur infrastructures en dehors québec
+
+Cloud act -> amazon, microsoft -> compagnie américaine
+Droit de consulter les données
+
+RGPD -> loi européenne bloquant
+
+Cluster de l'ifb
+16S pas besoin de grosses infrastructures
+Possible télécharger données publiques compressées
+Si déjà tableau de compte pas à retraiter
+
+16S peut être fait sur ordi bureau
+
+Goals standards de profondeur
+Encode guidelines -> à regarder pour épigénomique et transcriptomique
+Définir les "bonnes pratiques"
+
+Souris coûte montant + espace (environnement stérile)
+Réplicats biologiques
+Coût aussi important que séquençage humain
+
+Données échantillonnage et profondeur pour connaître le coût total
+
+Idée plus précise design pour connaître coût
+
+
+
+
+
+
+
+
+
